@@ -1,0 +1,40 @@
+.page-header__carousel {
+    background-color: #000000;
+    color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.carousel-promotion-wrap {
+    height: 14px;
+    overflow: hidden;
+}
+
+.carousel-promotion-main {
+    transition: all 0.8s;
+}
+
+.carousel-indicator {
+    color: #ffffff;
+    position: absolute;
+
+    &.carousel-indicator--prev {
+        left: 50%;
+        margin-left: -300px;
+    }
+
+    &.carousel-indicator--next {
+        right: 50%;
+        margin-right: -300px;
+    }
+}
+
+.carousel-promotion {
+    text-align: center;
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+}
