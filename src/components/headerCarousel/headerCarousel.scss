@@ -1,11 +1,32 @@
 .page-header__carousel {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: black;
+    color: white;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 0;
+
+    @media (max-width: 1024px) {
+        background-color: white;
+        padding: 12px 0;
+
+        .carousel-promotion {
+            color: black;
+        }
+
+        .carousel-indicator {
+            color: black;
+        }
+
+        .carousel-indicator--next {
+            margin-right: -160px;
+        }
+
+        .carousel-indicator--prev {
+            margin-left: -160px;
+        }
+    }
 }
 
 .carousel-promotion-wrap {
@@ -18,7 +39,7 @@
 }
 
 .carousel-indicator {
-    color: #ffffff;
+    color: white;
     position: absolute;
 
     &.carousel-indicator--prev {

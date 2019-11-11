@@ -4,13 +4,57 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0px 29.7px;
     position: relative;
+    width: 90%;
+    margin: auto;
+    max-width: 1280px;
+
+    @media (max-width: 1024px) {
+        background-color: #000000;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        height: 54px;
+        justify-content: space-between;
+    }
 }
 
 .header-logo {
     margin: 20px 0;
     cursor: pointer;
+}
+
+.header__mobile-menu {
+    color: white;
+    margin-left: 14px;
+    display: none;
+
+    @media (max-width: 1024px) {
+        display: block;
+    }
+}
+
+.header__burger-menu {
+    display: flex;
+    height: 14px;
+    flex-direction: column;
+    width: 23px;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 8px;
+
+    span {
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        display: block;
+    }
+}
+
+.header__mobile-menu-text {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .search {
@@ -25,12 +69,27 @@
     transition: width 0.2s;
     display: flex;
     align-items: center;
+
     img {
         width: 20px;
         height: 20px;
     }
+
     &:hover {
         width: 260px;
+    }
+
+    @media (max-width: 1024px) {
+        bottom: -44px;
+        left: 13px;
+        width: 170px;
+        border-bottom: none;
+
+        img {
+            width: 20px;
+            height: 20px;
+            color: #888b90;
+        }
     }
 }
 
@@ -42,9 +101,14 @@
     display: flex;
     position: relative;
     align-items: center;
-    // background-color: red;
     position: absolute;
     right: 0;
+
+    @media (max-width: 1024px) {
+        // everything happens in here,
+        // only below breakpoint 1024px
+        display: none;
+    }
 }
 
 .header_local-desktop {
@@ -167,3 +231,34 @@
     padding-right: 0;
 }
 
+.nixon-logo--mobile {
+    display: none;
+}
+
+.header-top__cart-number {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: -8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.header-top__cart--mobile {
+    position: relative;
+    margin-right: 14px;
+}
+
+@media (max-width: 1024px) {
+    .nixon-logo--desktop {
+        display: none;
+    }
+
+    .nixon-logo--mobile {
+        display: block;
+        width: 140px;
+    }
+}

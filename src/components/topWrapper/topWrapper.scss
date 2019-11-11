@@ -30,3 +30,54 @@
     text-shadow: 1px 1px 0 #000;
     margin: 0px 0px 30px;
 }
+
+.product_btn {
+    width: 250px;
+    padding: 16px 20px;
+    margin: 8px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #1e1e1e;
+    cursor: pointer;
+    background-color: #ffffff;
+    display: inline-block;
+    border: solid 3px #ffffff;
+
+    &:hover {
+        background-color: transparent;
+        transition-duration: 0.4s;
+    }
+}
+
+.product_look_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+
+    &:hover {
+        color: white;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .top-wrapper{
+        background-image: url(https://www.nixon.com/on/demandware.static/-/Library-Sites-Nixon/default/dw021aae71/19-2/Homepage/10-07/10-07-HERO-MOBILE_B.jpg);
+        background-position: center;
+        height:530px;
+        margin-top: 40px;
+    }
+
+    .top-wrapper_container h1 {
+        font-size: 35px;
+    }
+
+    .top-wrapper_container p {
+        font-size: 13px;
+    }
+
+
+    
+}

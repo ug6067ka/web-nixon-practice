@@ -1,0 +1,59 @@
+.controls {
+    width: 100%;
+    height: 267px;
+}
+
+.controls_inner {
+    padding: 0px 0px 20px;
+}
+
+.controls_inner_holder {
+    width: 266px;
+    height: 266px;
+    background-color: white;
+    background-image: url(https://static.pixlee.com/photos/299054731/medium/a587e354c11b3e3d308d.jpg);
+    background-size: cover;
+}
+
+.controls_inner {
+    display: flex;
+    padding: 0 40px;
+}
+
+.controls_inner-link {
+    background-position: center;
+    flex-basis: 20%;
+    height: 266px;
+    display: block;
+    margin: 0 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.controls_inner-link--girl {
+    background-image: url("https://static.pixlee.com/photos/299054731/medium/a587e354c11b3e3d308d.jpg");
+}
+
+.controls_inner-link--watch {
+    background-image: url("https://static.pixlee.com/photos/300843351/medium/061ba4e1d1f6342dc6d4.jpg");
+}
+
+.controls_inner-link--cover {
+    background-image: url("https://static.pixlee.com/photos/306957206/medium/637971b53b0a77120c16.jpg");
+}
+
+.controls_inner-link--dog {
+    background-image: url("https://static.pixlee.com/photos/302246968/medium/5afe4911c0eec2325eb9.jpg");
+}
+
+.controls_inner-link--tatto {
+    background-image: url("https://static.pixlee.com/photos/303353182/medium/untitled-_68-of-172_.jpg");
+}
+
+.controls_inner-link--coffee {
+    background-image: url("https://static.pixlee.com/photos/303081226/medium/4349aace4808013e0053.jpg");
+}
+
+.controls_inner-link--gold {
+    background-image: url("https://static.pixlee.com/photos/308161869/medium/48dc3d1336d1626fe4fe.jpg");
+}

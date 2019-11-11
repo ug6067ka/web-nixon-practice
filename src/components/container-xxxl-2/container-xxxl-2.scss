@@ -1,0 +1,68 @@
+.container-xxxl {
+}
+
+.shop-inner {
+}
+
+.shop-inner--retro {
+    background-image: url(https://www.nixon.com/on/demandware.static/-/Library-Sites-Nixon/default/dwe29c759b/19-2/Homepage/10-07/10-07-TIER2-C.jpg);
+}
+
+.shop-inner--wallet {
+    background-image: url(https://www.nixon.com/on/demandware.static/-/Library-Sites-Nixon/default/dwe01f18bc/19-2/Homepage/09-23/10-21-TIER3-B.jpg);
+}
+
+.shop-inner h2 {
+    position: absolute;
+    top: 290px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size: 27px;
+    color: #ffffff;
+}
+
+.shop-inner_footer {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.shop-inner__link {
+    font-size: 14px;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    border-bottom: solid 2px #ffffff;
+    margin: 0 20px;
+    bottom: 80px;
+    padding: 10px 6px 2px;
+
+    &.shop-inner_mans {
+        left: 40%;
+    }
+    &.shop-inner_womans {
+        left: 60%;
+    }
+}
+@media (max-width: 768px) {
+    .container-xxxl {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 20px 0px 0px;
+    }
+
+    .inner-left {
+        margin-right: 0px;
+    }
+
+    .inner-left {
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,115 @@
+.email-sing-up {
+    width: 100%;
+    height: 104px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email-sing-up {
+    background-color: #f7f8f9;
+    border-bottom: 1px solid #d1d4d6;
+    border-top: 1px solid #d1d4d6;
+}
+.email-sing-up_inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.email-sing-up_lavel {
+    font-size: 18px;
+    padding: 3px 0px 0px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.email-sing-up_lavel-bold {
+    font-weight: bold;
+}
+
+.email-sing-up-required {
+    width: 319px;
+    height: 38px;
+    margin: 0px 30px;
+    font-size: 13px;
+    border: 1px solid #acb1b4;
+    text-indent: 0;
+    display: flex;
+    align-items: center;
+    cursor: text;
+}
+
+.email-sing-up_text {
+    padding: 9.1px 6.5px;
+    color: #8a8a8a;
+}
+
+.email-sing-up_btn {
+    background-color: black;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.email-sing-up_btn_text {
+    width: 126px;
+    height: 46px;
+    color: #ffffff;
+    margin: 0px 0px 3px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-sing-up__primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .email-sing-up {
+        height: 170px;
+    }
+
+    .email-sing-up_inner {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .email-sing-up_lavel {
+        font-size: 17px;
+        padding-bottom: 10px;
+    }
+
+    .email-sing-up-required {
+        width: 60%;
+        font-size: 16px;
+        background-color: #ffffff;
+        margin-left: 0;
+        float: left;
+    }
+
+    .email-sing-up_btn {
+        // position: absolute;
+        /*bottom: -45px;
+        right: 10px;*/
+    }
+
+    .email-sing-up_btn_text {
+        width: 44px;
+        height: 44px;
+        color: #b4b4b4;
+    }
+
+    // .email-sing-up-required{
+    //     display: none;
+    // }
+
+    // .email-sing-up_btn{
+    //     display: none;
+    // }
+}
