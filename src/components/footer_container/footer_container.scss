@@ -1,8 +1,19 @@
 .footer_container {
-    margin: 0px 143px;
     padding: 35px 0px 25px;
     display: flex;
     flex-direction: column;
+    margin: 0px 8%;
+    border-bottom: solid 2px #d1d4d6;
+
+    @media (max-width: 768px) {
+        margin: 0px 10px;
+        position: relative;
+    }
+}
+.footer_logo {
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .footer_links {
@@ -10,12 +21,23 @@
     flex-direction: row;
     justify-content: flex-start;
     font-family: sans-serif;
+
+    @media (max-width: 768px) {
+        height: 365px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 .footer_inner {
     width: 297px;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+        width: 48%;
+    }
 }
 
 .footer_inner h3 {
@@ -23,7 +45,11 @@
     padding: 0px 0px 4px;
     font-size: 14px;
     font-weight: normal;
-    color:black;
+    color: black;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
 }
 
 .footer_inner h4 {
@@ -31,6 +57,10 @@
     font-size: 13px;
     color: #000;
     font-weight: normal;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
 }
 .footer_inner a {
     margin: 10px 0px;
@@ -41,12 +71,16 @@
     &:hover {
         color: #8a8a8a;
     }
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
 }
 
-.footer_inner p{
+.footer_inner p {
     width: 36px;
     height: 2px;
-    background-color:black;
+    background-color: black;
     margin: 0px 0px 10px 0px;
 }
 
@@ -58,37 +92,16 @@
     img {
         width: 36px;
         height: 36px;
+
+        @media (max-width: 768px) {
+            padding-right: 10px;
+        }
     }
 }
-
-@media (max-width: 768px) {
-    .footer_container {
-        margin: 0px 10px;
-        position: relative;
-    }
-
-    .footer_logo{
-       display: none; 
-    }
-
-    .footer_social-icon{
+.footer_social-icon {
+    @media (max-width: 768px) {
         position: absolute;
         bottom: -58px;
         right: -8px;
     }
-
-    .list-inline img{
-        padding-right: 10px;
-
-
-    }
-    .footer_links{
-        height: 365px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-
-
 }

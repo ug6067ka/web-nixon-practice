@@ -1,6 +1,7 @@
 .controls {
     width: 100%;
     height: 267px;
+    position: relative;
 }
 
 .controls_inner {
@@ -14,10 +15,17 @@
     background-image: url(https://static.pixlee.com/photos/299054731/medium/a587e354c11b3e3d308d.jpg);
     background-size: cover;
 }
+.controls-img {
+    overflow: hidden;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+}
 
 .controls_inner {
     display: flex;
-    padding: 0 40px;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .controls_inner-link {
@@ -28,6 +36,8 @@
     margin: 0 5px;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 266px;
+    min-width: 266px;
 }
 
 .controls_inner-link--girl {
@@ -56,4 +66,20 @@
 
 .controls_inner-link--gold {
     background-image: url("https://static.pixlee.com/photos/308161869/medium/48dc3d1336d1626fe4fe.jpg");
+}
+.btn-next {
+    font-size: 40px;
+    position: absolute;
+    right: 0px;
+    top: 111px;
+    color: #d1d4d6;
+    height: 74px;
+    width: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        color: #696c6f;
+        background-color: #f7f8f9;
+    }
 }

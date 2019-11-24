@@ -1,10 +1,10 @@
 .container-xxxl {
-    padding: 20px 50px;
+    padding: 45px 50px;
     display: flex;
     justify-content: space-between;
 
     @media (max-width: 1024px) {
-        padding: 20px 0;
+        padding: 45px 0;
         flex-direction: column;
         align-items: center;
     }
@@ -26,7 +26,6 @@
 
 .shop-inner--newproduct {
     background-image: url(https://www.nixon.com/on/demandware.static/-/Library-Sites-Nixon/default/dw372c0219/19-2/Homepage/10-07/10-07-TIER2-A_01A.jpg);
-    background-color: antiquewhite;
 }
 
 .shop-inner--sarfwatch {

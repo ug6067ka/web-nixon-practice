@@ -2,8 +2,12 @@
     height: 464px;
     display: flex;
     flex-direction: row;
-    margin: 0px 154px 60px;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 0 auto 60px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 
 .product-recomendation_title {
@@ -11,23 +15,55 @@
     line-height: 1.36;
     font-weight: 800;
     text-transform: none;
-    margin: 151px 0px 0px 154px;
+    display: flex;
+    align-items: center;
+    margin: 0 4% 0 3%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .product-inner {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    transform: translateX(-120px);
+
+    @media (max-width: 768px) {
+        transform: translateX(0);
+        overflow: auto;
+    }
+}
+
+.product-watch {
+    overflow: hidden;
+    width: 885px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 .product_tile {
     font-size: 28px;
-    margin: 0px 0px 5px;
+    margin: 0px 11px 8px;
     padding: 30px 0px;
+    width: 21%;
+    display: table;
+    &:hover {
+        background-color: #ececec;
+    }
 
     img {
-        width: 163px;
-        height: 231px;
-        padding: 10px;
+        width: 203px;
+        height: 288px;
+        margin-top: 49px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
@@ -36,6 +72,10 @@
     margin: 5px 0px 10px;
     display: block;
     text-align: center;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .product_tile p {
@@ -43,9 +83,30 @@
     display: block;
     text-align: center;
 }
+.product-watch-btn {
+    position: relative;
 
-@media (max-width: 768px) {
-    .product-recomendation_inner {
-        display: none;
+    a {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+}
+.product-watch-btn--prev {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 835px;
+    top: 209px;
+}
+
+.product-watch-btn--next {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0px;
+    top: 209px;
 }

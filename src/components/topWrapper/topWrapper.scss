@@ -1,11 +1,26 @@
 .top-wrapper {
-    height: 720px;
+    height: 660px;
     display: block;
     position: relative;
     background-image: url(https://www.nixon.com/on/demandware.static/-/Library-Sites-Nixon/default/dwb32ef71d/19-2/Homepage/10-07/10-07-HERO-TABLET.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+
+    @media (max-width: 1024px) {
+        margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+        background-image: url(https://www.nixon.com/on/demandware.static/-/Library-Sites-Nixon/default/dw021aae71/19-2/Homepage/10-07/10-07-HERO-MOBILE_B.jpg);
+        background-position: center;
+        height: 530px;
+        margin-top: 50px;
+    }
+
+    @media (max-width: 375px) {
+        border-top: solid 2px #9b9d9f;
+    }
 }
 
 .top-wrapper_container {
@@ -21,6 +36,10 @@
     font-size: 70px;
     color: #ffffff;
     font-family: sans-serif;
+
+    @media (max-width: 768px) {
+        font-size: 35px;
+    }
 }
 
 .top-wrapper_container p {
@@ -29,6 +48,10 @@
     font-family: sans-serif;
     text-shadow: 1px 1px 0 #000;
     margin: 0px 0px 30px;
+
+    @media (max-width: 768px) {
+        font-size: 13px;
+    }
 }
 
 .product_btn {
@@ -59,25 +82,4 @@
     &:hover {
         color: white;
     }
-}
-
-
-@media (max-width: 768px) {
-    .top-wrapper{
-        background-image: url(https://www.nixon.com/on/demandware.static/-/Library-Sites-Nixon/default/dw021aae71/19-2/Homepage/10-07/10-07-HERO-MOBILE_B.jpg);
-        background-position: center;
-        height:530px;
-        margin-top: 40px;
-    }
-
-    .top-wrapper_container h1 {
-        font-size: 35px;
-    }
-
-    .top-wrapper_container p {
-        font-size: 13px;
-    }
-
-
-    
 }
