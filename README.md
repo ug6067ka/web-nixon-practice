@@ -1,6 +1,6 @@
 # Web Nixon Practice
 
-[Page Review]
+Page Review
 ![](/img/nixon.png)
 
 ## Web Development
@@ -9,11 +9,12 @@ This Nixon mocking website is for practicing HTML, CSS(SCSS), pure JavaScript, a
 
 https://www.nixon.com/jp/ja
 
+## Usage
+
 Clone the repository
 
 ```sh
- git clone https://github.com/lifenautjoe/webpack-starter-basic PROJECT-NAME
- cd PROJECT-NAME
+ git clone https://github.com/ug6067ka/web-nixon-practice.git
 ```
 
 Install npm dependencies
@@ -21,14 +22,6 @@ Install npm dependencies
 ```sh
  npm install
 ```
-
-Run the kickstart command
-
-```sh
-npm run kickstart
-```
-
-**After the project has been kickstarted**
 
 To start the development server
 
